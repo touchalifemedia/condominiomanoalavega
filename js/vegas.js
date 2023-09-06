@@ -14,9 +14,9 @@ $(document).ready(function(){
     // Main slideshow displayed on the home
     $('#vegas-background').vegas({
         slides: [
-            { src: 'img/slide-1.jpg' },
-            { src: 'img/slide-2.jpg' }, // Remove this line and the next one if you want only one static picture
-            { src: 'img/slide-3.jpg' }, // ...
+            { src: 'img/condominio-manoa-la-vega.jpg' },
+            { src: 'img/interiores-condominio-manoa-la-vega.jpg' }, // Remove this line and the next one if you want only one static picture
+            { src: 'img/habitacion-principal-exteriores-condominio-manoa-la-vega.jpg' }, // ...
         ],
 
         // Delay beetween slides in milliseconds.

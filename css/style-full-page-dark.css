@@ -323,7 +323,7 @@ h1 {
 }
 h1 span {
   font-size: 2.5rem;
-  color: #cbcbcb;
+  color: #ffffff;
   font-weight: 500;
 }
 
@@ -411,6 +411,16 @@ sup {
   width: 100vw;
   height: 100vh !important;
 }
+.light-btn{background: #ffffff42;
+  font-weight: bold;
+  padding: 0.5em;
+  border-radius: 0.4em;
+  font-family: Raleway, "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif;}
+  
+  .light-btn:hover{
+    background: #86b919;
+    color:white;
+  }
 
 #home {
   position: relative;
@@ -465,9 +475,9 @@ sup {
   font-family: Raleway, "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif;
   background-size: 400% 400%;
   /* background: $radical-red; */
-  background-color: #ff3366;
-  background-image: -webkit-linear-gradient(-540deg, #ff3366, #FFD800);
-  background-image: linear-gradient(270deg,#ff3366, #FFD800);
+  background-color: #99c916;
+  background-image: -webkit-linear-gradient(-540deg, #99c916, #FFD800);
+  background-image: linear-gradient(270deg,#99c916, #FFD800);
   -webkit-animation: gradientor 10s ease infinite;
   -moz-animation: gradientor 10s ease infinite;
   animation: gradientor 10s ease infinite;
@@ -489,7 +499,7 @@ sup {
 }
 #home .content .action-btn:hover {
   color: #FFFFFF;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset, 0 0 0 0.8rem #ff3366;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset, 0 0 0 0.8rem #99c916;
 }
 #home .bottom-home {
   position: absolute;
@@ -544,10 +554,10 @@ sup {
   transition: all 0.2s ease-in-out;
 }
 #home .social-icons a:hover {
-  color: #ff3366;
+  color: #99c916;
 }
 #home .social-icons a:hover i {
-  color: #ff3366;
+  color: #99c916;
 }
 #home .copyright {
   position: absolute;
@@ -560,7 +570,7 @@ sup {
   line-height: 50px;
 }
 #home .copyright a {
-  color: #ff3366;
+  color: #99c916;
 }
 
 @-webkit-keyframes gradientor {
@@ -796,7 +806,7 @@ sup {
   transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 #portfolio .portfolio figure figcaption .photo-details i.icon:hover {
-  color: #ff3366;
+  color: #99c916;
 }
 #portfolio .portfolio figure figcaption .photo-details p {
   display: none;
@@ -851,7 +861,7 @@ sup {
   border-radius: 0;
 }
 .services .box-info-light span.icon {
-  color: #ff3366;
+  color: #99c916;
   font-size: 6rem;
   line-height: 1.4;
   display: inline-block;
@@ -1034,7 +1044,7 @@ sup {
   font-weight: bold;
 }
 .bottom-info .phone-mail-link:hover {
-  color: #ff3366;
+  color: #99c916;
 }
 
 #subscribe p {
@@ -1097,7 +1107,7 @@ sup {
   display: block;
   margin: 0;
   height: 5rem;
-  background: #ff3366;
+  background: #99c916;
   color: #FFFFFF;
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
@@ -1144,11 +1154,11 @@ sup {
 /* ------------------------------------- */
 .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
 .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
-  background: #ff3366;
+  background: #99c916;
 }
 
 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
-  background: #ff3366;
+  background: #99c916;
 }
 
 .mCSB_scrollTools {
@@ -1191,11 +1201,100 @@ sup {
   text-align: center;
 }
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  background-color: rgba(255, 51, 102, 0.5);
+  background-color: #99c9167b;
 }
 
 .mCSB_scrollTools-left {
   right: 60vw !important;
+}
+
+
+/* ------------------------------------- */
+/* Whatsapp ................... */
+/* ------------------------------------- */
+.menu-fab {
+  position: fixed;
+  right: 48px;
+  bottom: 48px;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.submenu-fab {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  -o-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.submenu-fab.active:hover, .menu-fab:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.submenu-fab.active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.mdl-button--fab.mdl-button--colored {
+  background: #25D366;
+  color: rgb(255,255,255);
+  z-index: 30 !important;
+  border: none;
+  border-radius: 56px;
+  width: 3.3em;
+  height: 3.3em;
+  padding: 0.7em;
+}
+#fabmenu .mdl-tooltip--left {
+  display:none;
+  text-align: center;
+  }
+
+  #fabmenu:hover .mdl-tooltip--left {
+    display: block;
+    top: 1.3em;
+    position: absolute;
+    right: 53px;
+    width: 73px;
+    background: white;
+    color: black;
+    padding-top: 3px;
+    border-radius: 5px;
+    padding-bottom: 3px;
+    text-align: center;
+    font-size: 0.7em;
+    box-shadow: 1px 1px 7px #0000002e;
+}
+
+.one {
+  right: 56px;
+  bottom: 120px;
+}
+
+.two {
+  right: 56px;
+  bottom: 176px;
+}
+
+.three {
+  right: 56px;
+  bottom: 232px;
 }
 
 /* ------------------------------------- */
@@ -1285,7 +1384,7 @@ sup {
     transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   #portfolio .portfolio figure figcaption .photo-details i.icon:hover {
-    color: #ff3366;
+    color: #99c916;
   }
   #portfolio .portfolio figure figcaption .photo-details p {
     display: none;
